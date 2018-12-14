@@ -1,0 +1,43 @@
+% =============================================================================
+
+\newcommandx{\XCID}[1][1={}]{\mbox{{\sf XCrypto}\IfEq{#1}{}{}{[#1]}}\xspace}
+
+\newcommand{\XCSYNTAXDEF}[2]{%
+  \expandafter\newcommand\csname rmk-#1\endcsname{\VERB[RV]{#1 #2}}%
+}
+
+\newcommand{\XCSYNTAXUSE}[1]{\csname rmk-#1\endcsname}
+
+\newcommandx{\XCINSTR}[4]{
+  \paragraph{\VERB[RV]{#1}}
+  \label{sec:spec:instruction:#1} \XCSYNTAXDEF{#1}{#2}
+
+  \begin{itemize}[labelindent=0pt,align=left,noitemsep]
+  \item {\bf Description:} 
+        #3
+  \item {\bf Encoding:}
+
+        \begin{center}
+        \begin{bytefield}[bitwidth={1.2em},endianness={big}]{32}
+        \bitheader{0-31} \\ \XCENCODE{#1}
+        \end{bytefield}
+        \end{center}
+
+  \item {\bf Syntax and semantics:}
+        \[
+        \XCSYNTAXUSE{#1}
+        ~~~\mapsto~~~
+        \left\{
+        \begin{array}{c}
+        \begin{algorithm}[H]
+        \Begin {
+          #4
+        }
+        \end{algorithm}
+        \end{array}
+        \right.
+        \]
+  \end{itemize}
+}
+
+% =============================================================================

@@ -1,194 +1,13 @@
 % =============================================================================
 
-\usepackage{amssymb}
-\usepackage{amsmath}
-\usepackage[plain,shortend]{algorithm2e}
-\usepackage{authblk}
-\usepackage[backend=biber,style=numeric]{biblatex}
-\usepackage{bytefield}
-\usepackage{booktabs}
-\usepackage{caption}
-\usepackage{currfile}
-\usepackage{enumitem}
-\usepackage{fancyhdr}
-\usepackage{float}
-\usepackage[a4paper,margin={2cm}]{geometry}
-\usepackage[hidelinks]{hyperref}
-\usepackage{import}
-\usepackage[utf8]{inputenc}
-\usepackage{listings}
-\usepackage{longtable}
-\usepackage{multirow,bigdelim}
-\usepackage{pbox}
-\usepackage{ragged2e}
-\usepackage{tabularx}
-\usepackage{titlesec}
-\usepackage{tikz}
-\usepackage{url}
-\usepackage{xargs}
-\usepackage{xspace}
-\usepackage{xstring}
-\usepackage{xcolor}
-
-\usetikzlibrary{arrows}
-\usetikzlibrary{arrows.meta}
-\usetikzlibrary{calc}
-\usetikzlibrary{decorations.markings}
-\usetikzlibrary{decorations.pathmorphing}
-\usetikzlibrary{decorations.pathreplacing}
-\usetikzlibrary{decorations.shapes}
-\usetikzlibrary{decorations.text}
-\usetikzlibrary{fit}
-
-% =============================================================================
-
-\hypersetup{colorlinks,linkcolor={red!90!black},citecolor={blue!50!black},urlcolor={blue!80!black}}
-
-\fancypagestyle{plain}{
-  \fancyhf{}
-      
-  \renewcommand{\headrulewidth}{0.5pt}
-  \renewcommand{\footrulewidth}{0.5pt}
-
-  \fancyhead[L]{}
-  \fancyhead[C]{}
-  \fancyhead[R]{}
-  \fancyfoot[L]{\url{http://www.scarv.org}}
-  \fancyfoot[C]{}
-  \fancyfoot[R]{\thepage}
-}
-  
-\pagestyle{plain}
-
-\titleformat{\section}[block]{\Large\bfseries}{\thesection.}{1em}{}
-\titleformat{\subsection}[block]{\normalfont\bfseries}{\thesubsection.}{1em}{}
-\titleformat{\subsubsection}[block]{\normalfont\bfseries}{\thesubsubsection.}{1em}{}
-\titleformat{\paragraph}[block]{\normalfont\bfseries}{\theparagraph.}{1em}{}
-\titleformat{\subparagraph}[runin]{\normalfont\bfseries}{}{0em}{}
-\titlespacing*{\subparagraph}{0pt}{1ex}{1em}
-
-\setcounter{tocdepth}{3}
-\setcounter{secnumdepth}{4}
-
-\setlength{\algomargin}{0em}
-\SetArgSty{textnormal}
-\DontPrintSemicolon
-
-% =============================================================================
-
-% Design choice notes
-\newcommand{\designnote}[1]{\footnote{#1}}
-\newcommandx{\note}[1]{{\bf Note:} #1\\}
-
-\newcommandx{\fixme}[1]{{\bf \color{red}{FIXME}}\footnote{#1} \\}
-
-\newcommand{\encspace}{{\em custom1} }
-\newcommand{\encopcode}{$0101011$}
-
-\newcommandx{\ASM}[1]{{\tt #1}}
-\newcommandx{\instlab}[1]{\label{sec:#1}}
-\newcommandx{\instref}[1]{{\tt \nameref{sec:#1}}}
-\newcommandx{\instdesc}[1]{\subsubsection{#1}\label{sec:#1}}
-\newcommandx{\instdescx}[5]{
-
-\subsubsection{ #1 }
-
-{\ienc{ #2 }}
-
-{\paragraph{Description:} #3}
-
-{\paragraph{Function:} #4}
-
-{ #5 }
-}
-
-% Assembly instruction definition
-\newcommandx{\INST}[2]{
-  \ASM{#1}
-  \\
-  \begin{algorithm}[H]
-  #2
-  \end{algorithm}
-}
-
-\newcommand{\ienc}[1]{
-\begin{figure}[H]
-\centering
-\begin{bytefield}[bitwidth=1.2em,endianness=big]{32}
-\bitheader{0-31}\\
-#1
-\end{bytefield}
-\end{figure}}
-
-% For multi-line autoflowed table cells
-\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
-
-
-
-\newcommandx{\RVXLEN}{\mbox{XLEN}\xspace}
-\newcommandx{\RVCUSTOM}[1]{\mbox{\em custom-#1}\xspace}
-
-% ISE name
-\newcommandx{\ISE}{{\sf XCrypto}\xspace} % TODO: remove
-% Co-processor name
-\newcommandx{\COP}{\ISE Co-Processor }    % TODO: remove
-
-% Tool names
-\newcommandx{\yosys}{{\tt yosys}\xspace}
-\newcommandx{\Yosys}{Yosys\xspace}
-
-
-% =============================================================================
-
-\newcommandx{\XCID}[1][1={}]{\mbox{{\sf XCrypto}\IfEq{#1}{}{}{[#1]}}\xspace}
-
-\newcommand{\XCSYNTAXDEF}[2]{%
-  \expandafter\newcommand\csname rmk-#1\endcsname{\VERB[RV]{#1 #2}}%
-}
-
-\newcommand{\XCSYNTAXUSE}[1]{\csname rmk-#1\endcsname}
-
-\newcommandx{\XCINSTR}[4]{
-  \paragraph{\VERB[RV]{#1}}
-  \label{sec:spec:instruction:#1} \XCSYNTAXDEF{#1}{#2}
-
-  \begin{itemize}[labelindent=0pt,align=left,noitemsep]
-  \item {\bf Description:} 
-        #3
-  \item {\bf Encoding:}
-
-        \begin{center}
-        \begin{bytefield}[bitwidth={1.2em},endianness={big}]{32}
-        \bitheader{0-31} \\ \XCENCODE{#1}
-        \end{bytefield}
-        \end{center}
-
-  \item {\bf Syntax and semantics:}
-        \[
-        \XCSYNTAXUSE{#1}
-        ~~~\mapsto~~~
-        \left\{
-        \begin{array}{c}
-        \begin{algorithm}[H]
-        \Begin {
-          #4
-        }
-        \end{algorithm}
-        \end{array}
-        \right.
-        \]
-  \end{itemize}
-}
-
-% -----------------------------------------------------------------------------
-
 \DeclareMathOperator*{\argmin}{arg\,min}
 \DeclareMathOperator*{\argmax}{arg\,max}
 \DeclareMathOperator{\abs}{abs}
 \DeclareMathOperator{\ext}{ext}
 
-% fonts: calligraphic (e.g., for mathematical spaces), black board  (e.g., for mathematical structures)
+% fonts calligraphic (e.g., for mathematical spaces)
 \newcommandx{\C}[1]{\ensuremath{\mathcal #1}\xspace}
+% font: black board  (e.g., for mathematical structures)
 \newcommandx{\B}[1]{\ensuremath{\mathbb  #1}\xspace}
 
 % algorithm, identifier
@@ -307,7 +126,8 @@
 \newcommand{\VERB}[2][]{\mbox{\lstinline[style={inline},language={#1}]`#2`}}
 % verbatim macro:  block
 \lstnewenvironment{MKVERB}[1][]{\lstset{basicstyle=\ttfamily,#1}}{}
-% verbatim style
+
+% verbatim style: inline
 \lstdefinestyle{inline}{
   escapechar={¬},
   basicstyle=\ttfamily, 
@@ -318,6 +138,7 @@
   keepspaces=true,
   showstringspaces=false
 }
+% verbatim style: float
 \lstdefinestyle{float}{
   escapechar={¬},
   basicstyle=\ttfamily\scriptsize,  
@@ -328,6 +149,7 @@
   showstringspaces=false,
   frame=single
 }
+% verbatim style: block
 \lstdefinestyle{block}{
   escapechar={¬},
   basicstyle=\ttfamily\scriptsize,  
@@ -340,10 +162,5 @@
 }
 % verbatim language
 \lstalias{RV}{C}
-
-% http://tex.stackexchange.com/questions/164664/how-to-create-an-array-with-both-vertical-and-horizontal-braces-around-the-eleme
-\newcommand\undermat[2]{%
-  \makebox[0pt][l]{$\smash{\underbrace{\phantom{%
-    \begin{matrix}#2\end{matrix}}}_{\text{$#1$}}}$}#2}
 
 % =============================================================================
