@@ -1,0 +1,69 @@
+\documentclass[crop={true},border={0.2cm},multi={LOGO}]{standalone}
+
+\usepackage{tikz}
+\usepackage{xargs}
+\usepackage{xcolor}
+\usepackage{xltxtra}
+
+\usetikzlibrary{arrows}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.markings}
+
+\definecolor{rv-yellow}{HTML}{F7B217}
+\definecolor{rv-purple}{HTML}{273272}
+
+\setmainfont{PCap Terminal Bold}
+
+% =============================================================================
+
+\begin{document}
+
+\newcommandx{\LOGOIC}{
+  \tikzstyle{ic}=[gray,line width={2pt}]
+  \node [ic,draw,rectangle,rounded corners,minimum height={4.5cm},minimum width={4.5cm}] (SCARV) {\Huge \textcolor{rv-purple}{SCA}\textcolor{rv-yellow}{RV}} ;
+
+  \foreach \i in {-15,-13,-11,-9,-7,-5,-3,-1} {
+    \draw [ic] ([xshift={0.13cm*\i-0.05cm}] SCARV.north) -- ++(+0.0cm,+0.2cm) -- ++(+0.12cm,+0.0cm) -- ++(+0.0cm,-0.2cm) ;
+    \draw [ic] ([xshift={0.13cm*\i-0.05cm}] SCARV.south) -- ++(+0.0cm,-0.2cm) -- ++(+0.12cm,+0.0cm) -- ++(+0.0cm,+0.2cm) ;
+    \draw [ic] ([yshift={0.13cm*\i-0.05cm}] SCARV.east)  -- ++(+0.2cm,+0.0cm) -- ++(+0.0cm,+0.12cm) -- ++(-0.2cm,+0.0cm) ;
+    \draw [ic] ([yshift={0.13cm*\i-0.05cm}] SCARV.west)  -- ++(-0.2cm,+0.0cm) -- ++(+0.0cm,+0.12cm) -- ++(+0.2cm,+0.0cm) ;
+  
+  }
+  \foreach \i in {+15,+13,+11,+9,+7,+5,+3,+1} {
+    \draw [ic] ([xshift={0.13cm*\i+0.05cm}] SCARV.north) -- ++(+0.0cm,+0.2cm) -- ++(-0.12cm,+0.0cm) -- ++(+0.0cm,-0.2cm) ;
+    \draw [ic] ([xshift={0.13cm*\i+0.05cm}] SCARV.south) -- ++(+0.0cm,-0.2cm) -- ++(-0.12cm,+0.0cm) -- ++(+0.0cm,+0.2cm) ;
+    \draw [ic] ([yshift={0.13cm*\i+0.05cm}] SCARV.west)  -- ++(-0.2cm,+0.0cm) -- ++(+0.0cm,-0.12cm) -- ++(+0.2cm,+0.0cm) ;
+    \draw [ic] ([yshift={0.13cm*\i+0.05cm}] SCARV.east)  -- ++(+0.2cm,+0.0cm) -- ++(+0.0cm,-0.12cm) -- ++(-0.2cm,+0.0cm) ;
+  }
+  
+  \draw [ic] ([shift={(+0.5cm,-0.5cm)}] SCARV.north west) circle (0.2cm) ;
+}
+
+\newcommandx{\LOGOIO}{
+  \tikzstyle{iarrow}=[gray,line width={2pt},decorate,decoration={snake,amplitude={0.2cm},pre length={0.5cm},post length={0.2cm}},>=latex]
+  \tikzstyle{oarrow}=[gray,line width={2pt},decorate,decoration={snake,amplitude={0.2cm},pre length={0.2cm},post length={0.5cm}},>=latex]
+  
+  \draw [iarrow,<-] ([shift={(-0.5cm,-1.0cm)}] SCARV.north west) -- ++(-2.0cm,+0.5cm) ;
+  \draw [iarrow,<-] ([shift={(-0.5cm,+0.0cm)}] SCARV.west)       -- ++(-2.0cm,+0.0cm) ;
+  \draw [iarrow,<-] ([shift={(-0.5cm,+1.0cm)}] SCARV.south west) -- ++(-2.0cm,-0.5cm) ;
+  
+  \draw [oarrow,->] ([shift={(+0.5cm,-1.0cm)}] SCARV.north east) -- ++(+2.0cm,+0.5cm) ;
+  \draw [oarrow,->] ([shift={(+0.5cm,+0.0cm)}] SCARV.east)       -- ++(+2.0cm,+0.0cm) ;
+  \draw [oarrow,->] ([shift={(+0.5cm,+1.0cm)}] SCARV.south east) -- ++(+2.0cm,-0.5cm) ;
+}
+
+\begin{LOGO}
+\begin{tikzpicture}
+\LOGOIC
+\end{tikzpicture}
+\end{LOGO}
+
+\begin{LOGO}
+\begin{tikzpicture}
+\LOGOIC\LOGOIO
+\end{tikzpicture}
+\end{LOGO}
+
+\end{document}
+
+% =============================================================================
