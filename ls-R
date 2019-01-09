@@ -3,9 +3,16 @@
 .:
 LICENSE.txt
 README.md
+bibtex
 logo
 ls-R
 tex
+
+./bibtex:
+bib
+
+./bibtex/bib:
+scarv.bib
 
 ./logo:
 Makefile
@@ -48,12 +55,8 @@ logo-plain.svg
 latex
 
 ./tex/latex:
-bib
 macro
 style
-
-./tex/latex/bib:
-scarv.bib
 
 ./tex/latex/macro:
 scarv-notation.sty
