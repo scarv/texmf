@@ -1,3 +1,14 @@
+% Copyright (C) 2019 SCARV project <info@scarv.org>
+%
+% Use of this source code is restricted per the MIT license, a copy of which 
+% can be found at https://opensource.org/licenses/MIT (or should be included 
+% as LICENSE.txt within the associated archive or repository).
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{scarv-report}[2019/11/01]
+
+\PassOptionsToClass{10pt}{article} \LoadClass{article}
+
 % =============================================================================
 
 \usepackage{amssymb}
@@ -40,6 +51,9 @@
 \usetikzlibrary{decorations.text}
 \usetikzlibrary{fit}
 
+\usepackage{scarv-notation}
+\usepackage{scarv-xcrypto}
+
 % =============================================================================
 
 \hypersetup{colorlinks,linkcolor={red!90!black},citecolor={blue!50!black},urlcolor={blue!80!black}}
@@ -73,3 +87,20 @@
 \setlength{\algomargin}{0em}
 \SetArgSty{textnormal}
 \DontPrintSemicolon
+
+\addbibresource{scarv.bib}
+
+% =============================================================================
+
+\newcommandx{\MKPROLOGUE}{
+  \newpage
+  \maketitle \tableofcontents
+  \newpage
+}
+
+\newcommandx{\MKEPILOGUE}{
+  \newpage
+  \printbibliography
+}
+
+% =============================================================================
