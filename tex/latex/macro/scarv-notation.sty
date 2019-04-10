@@ -6,6 +6,7 @@
 
 % =============================================================================
 
+% standard maths operators
 \DeclareMathOperator*{\argmin}{arg\,min}
 \DeclareMathOperator*{\argmax}{arg\,max}
 \DeclareMathOperator{\abs}{abs}
@@ -171,5 +172,8 @@
 }
 % verbatim language
 \lstalias{RV}{C}
+
+% fancy "circled" marker
+\newcommandx{\MARKER}[1]{\tikz[baseline={(X.base)}]{\node[shape={circle},draw,inner sep={2pt}] (X) {#1};}}
 
 % =============================================================================
