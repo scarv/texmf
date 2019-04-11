@@ -79,7 +79,9 @@
 \titleformat{\subsubsection}[block]{\normalfont\bfseries}{\thesubsubsection.}{1em}{}
 \titleformat{\paragraph}[block]{\normalfont\bfseries}{\theparagraph.}{1em}{}
 \titleformat{\subparagraph}[runin]{\normalfont\bfseries}{}{0em}{}
-\titlespacing*{\subparagraph}{0pt}{1ex}{1em}
+
+\titlespacing*{\paragraph}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+\titlespacing*{\subparagraph}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
 
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{4}
