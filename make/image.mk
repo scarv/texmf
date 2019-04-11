@@ -39,3 +39,6 @@ IMAGE_TARGETS_EPS = $(foreach FILE, ${IMAGE_SOURCES_EPS}, $(call image_map_eps, 
 $(foreach FILE,${IMAGE_SOURCES_TEX},$(eval $(call image_rule_tex,${FILE})))
 $(foreach FILE,${IMAGE_SOURCES_DOT},$(eval $(call image_rule_dot,${FILE})))
 $(foreach FILE,${IMAGE_SOURCES_EPS},$(eval $(call image_rule_eps,${FILE})))
+
+IMAGE_SOURCES     = ${IMAGE_SOURCES_TEX} ${IMAGE_SOURCES_DOT} ${IMAGE_SOURCES_EPS}
+IMAGE_TARGETS     = ${IMAGE_TARGETS_TEX} ${IMAGE_TARGETS_DOT} ${IMAGE_TARGETS_EPS}
