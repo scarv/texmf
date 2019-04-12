@@ -53,6 +53,7 @@
 
 \usepackage{scarv-notation}
 \usepackage{scarv-xcrypto}
+\usepackage{scarv-lab}
 
 % =============================================================================
 
