@@ -6,6 +6,7 @@ README.md
 bibtex
 logo
 ls-R
+make
 tex
 
 ./bibtex:
@@ -51,6 +52,9 @@ logo-fancy.svg
 logo-plain.svg
 
 
+./make:
+image.mk
+
 ./tex:
 latex
 
@@ -59,6 +63,7 @@ macro
 style
 
 ./tex/latex/macro:
+scarv-lab.sty
 scarv-notation.sty
 scarv-xcrypto.sty
 
