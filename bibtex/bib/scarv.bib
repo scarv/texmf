@@ -28,19 +28,65 @@
 }
 
 % -----------------------------------------------------------------------------
-% CHES
+% CRYPTO
 
-@article{SCARV:SeoLiuLonga:18,
- title={SIDH on ARM: Faster Modular Multiplications for Faster Post-Quantum Supersingular Isogeny Key Exchange},
- volume={2018},
- url={https://tches.iacr.org/index.php/TCHES/article/view/7266},
- DOI={10.13154/tches.v2018.i3.1-20},
- number={3},
- journal={IACR Transactions on Cryptographic Hardware and Embedded Systems},
- author={Seo, Hwajeong and Liu, Zhe and Longa, Patrick and Hu, Zhi},
- year={2018},
- month={Aug.},
- pages={1-20}
+@inproceedings{SCARV:KocJafJun:99,
+  author      = {P.C. Kocher and J. Jaffe and B. Jun},
+  title       = {Differential Power Analysis},
+  booktitle   = {Advances in Cryptology (CRYPTO)},
+  publisher   = {Springer-Verlag},
+  series      = {LNCS 1666},
+  pages       = {388--397},
+  year        = {1999}
+}
+
+% -----------------------------------------------------------------------------
+% COSADE
+
+@inproceedings{SCARV:CorGroDin:18,
+  author       = {Y. Le Corre and J. Gro{\ss}sch\"{a}dl and D. Dinu},
+  title        = {Micro-architectural Power Simulator for Leakage Assessment of Cryptographic Software on {ARM} {Cortex-M3} Processors},
+  booktitle    = {Constructive Side-Channel Analysis and Secure Design (COSADE)},
+  publisher    = {Springer-Verlag},
+  series       = {LNCS 10815}, 
+  pages        = {82--98}, 
+  year         = {2018}
+}
+
+% -----------------------------------------------------------------------------
+% TCHES
+
+@article{SCARV:SLLH:18,
+  author      = {H. Seo and Z. Liu and P. Longa and Z. Hu},
+  title       = {{SIDH} on {ARM}: Faster Modular Multiplications for Faster Post-Quantum Supersingular Isogeny Key Exchange},
+  journal     = {IACR Transactions on Cryptographic Hardware and Embedded Systems},
+  volume      = {2018},
+  number      = {3},
+  pages       = {1--20},
+  year        = {2018}
+}
+
+% -----------------------------------------------------------------------------
+%  CHES
+
+@inproceedings{SCARV:GanMouOli:01,
+  author       = {K. Gandolfi and C. Mourtel and F. Olivier},
+  title        = {Electromagnetic analysis: Concrete results},
+  booktitle    = {Cryptographic Hardware and Embedded Systems (CHES)},
+  publisher    = {Springer-Verlag},
+  series       = {LNCS 2162}, 
+  pages        = {251--261}, 
+  year         = {2001}
+}
+
+@inproceedings{SCARV:AARR:02,
+  author       = {D. Agrawal and B. Archambeault and J.R. Rao and P. Rohatgi},
+  title        = {The {EM} Side—Channel(s)},
+  booktitle    = {Cryptographic Hardware and Embedded Systems (CHES)},
+  publisher    = {Springer-Verlag},
+  series       = {LNCS 2523}, 
+  pages        = {29--45}, 
+  year         = {2002}
 }
 
 @inproceedings{SCARV:BerSch:12,
@@ -367,6 +413,14 @@
 % -----------------------------------------------------------------------------
 % DAC
 
+@inproceedings{SCARV:PXJFT:18,
+  author       = {J. Park and X. Xu and Y. Jin and D. Forte and M. Tehranipoor},
+  title        = {Power-based side-channel instruction-level disassembler},
+  booktitle    = {Design Automation Conference (DAC)},
+  pages        = {119:1--119:6},
+  year         = {2018}
+}
+
 @inproceedings{SCARV:RKLMR:03,
   author       = {S. Ravi and P.C. Kocher and R.B. Lee and G. McGraw and A. Raghunathan},
   title        = {Security as a new dimension in embedded system design},
@@ -386,6 +440,14 @@
 % -----------------------------------------------------------------------------
 % DATE
 
+@inproceedings{SCARV:SBOSP:15,
+  author       = {D. Strobel and F. Bache and D. Oswald and F. Schellenberg and C. Paar},
+  title        = {{SCANDALee}: A side-{ChANnel}-based {DisAssembLer} using local electromagnetic emanations},
+  booktitle    = {Design, Automation \& Test in Europe (DATE)},
+  pages        = {139--144},
+  year         = {2015}
+}
+
 @inproceedings{SCARV:RegIen:16,
   author       = {F. Regazzoni and P. Ienne},
   title        = {Instruction Set Extensions for Secure Applications},
@@ -401,6 +463,33 @@
   pages        = {218--223},
   year         = {2006}
 }
+
+% -----------------------------------------------------------------------------
+% ISCA
+
+@inproceedings{SCARV:NSAZP:17,
+  author       = {A. Nazari and N. Sehatbakhsh and M. Alam and A. Zajic and M. Prvulovic},
+  title        = {{EDDIE}: {EM}-Based Detection of Deviations in Program Execution},
+  booktitle    = {International Symposium on Computer Architecture (ISCA)},
+  pages        = {333--346},
+  year         = {2017}
+}
+
+@inproceedings{SCARV:WuWeaAus:01,
+  author       = {L. Wu and C. Weaver and T. Austin},
+  title        = {{CryptoManiac}: A Fast Flexible Architecture for Secure Communication},
+  booktitle    = {International Symposium on Computer Architecture (ISCA)},
+  pages        = {110--119},
+  year         = {2001}
+} 
+
+@inproceedings{SCARV:DMWS:12,
+  author       = {J. Demme and R. Martin and A. Waksman and S. Sethumadhavan},
+  title        = {Side-channel vulnerability factor: a metric for measuring information leakage},
+  booktitle    = {International Symposium on Computer Architecture (ISCA)},
+  pages        = {106--117},
+  year         = {2012}
+} 
 
 % -----------------------------------------------------------------------------
 % USENIX
@@ -449,7 +538,91 @@
 }
 
 % -----------------------------------------------------------------------------
+% CCS
+
+@inproceedings{SCARV:NSSKM:17,
+ author        = {M. Nemec and M. Sys and P. Svenda and D. Klinec and V. Matyas},
+ title         = {The Return of {Coppersmith's} Attack: Practical Factorization of Widely Used {RSA} Moduli},
+ booktitle     = {Computer and Communications Security (CCS)},
+ pages         = {1631--1648},
+ year          = {2017}
+} 
+
+@inproceedings{SCARV:LWZZXX:16,
+  author       = {Y. Liu and L. Wei and Z. Zhou and K. Zhang and W. Xu and Q. Xu},
+  title        = {On Code Execution Tracking via Power Side-Channel},
+  booktitle    = {Computer and Communications Security (CCS)},
+  pages        = {1019--1031},
+  year         = {2016}
+}
+
+% -----------------------------------------------------------------------------
+% HOST
+
+@inproceedings{SCARV:RPXFT:17,
+  author       = {F. Rahman and J. Park and X. Xu and D. Forte and M. Tehranipoor},
+  title        = {{SPOILD}: {S}ide-channel {PO}wer-based {I}nstruction-{L}evel {D}isassembler},
+  booktitle    = {Hardware-Oriented Security and Trust (HOST)},
+  pages        = {Hardware Demo \#4},
+  year         = {2017},
+  url          = {http://www.hostsymposium.org/host2017/hwdemo/HOST_2017_hwdemo_4.pdf}
+}
+
+@inproceedings{SCARV:AweAus:17,
+  author       = {Z.B. Aweke and T.M. Austin},
+  title        = {{Ozone}: Efficient Execution with Zero Timing Leakage for Modern Microarchitectures},
+  booktitle    = {Hardware Oriented Security and Trust (HOST)},
+  pages        = {153},
+  year         = {2017}
+}
+
+% -----------------------------------------------------------------------------
 % misc.
+
+@inproceedings{SCARV:MsgMarMay:13,
+  author       = {M. Msgna and K. Markantonakis and K. Mayes},
+  title        = {The {B}-Side of Side Channel Leakage: Control Flow Security in Embedded Systems},
+  booktitle    = {Security and Privacy in Communication Networks (SecureComm)},
+  publisher    = {Springer-Verlag},
+  series       = {LNICST 127},
+  pages        = {288--304},
+  year         = {2013}
+}
+
+@inproceedings{SCARV:EisPaaWeg:10,
+  author       = {T. Eisenbarth and C. Paar and B. Weghenkel},
+  title        = {Building a Side Channel Based Disassembler},
+  booktitle    = {Transactions on Computational Science X},
+  publisher    = {Springer-Verlag},
+  series       = {LNCS 6340},
+  pages        = {78--99},
+  year         = {2010}
+}
+
+
+@inproceedings{SCARV:CMAFGWCWL:15,
+  author       = {C. Cernazanu-Glavan and M. Marcu and A. Amaricai and S. Fedeac and M. Ghenea and Z. Wang and A. Chattopadhyay and J. Weinstock and R. Leupers},
+  title        = {Direct {FPGA}-based Power Profiling for a {RISC} Processor},
+  booktitle    = {IEEE International Instrumentation and Measurement Technology Conference (I2MTC)},
+  pages        = {1578--1583},
+  year         = {2015}
+}
+
+@inproceedings{SCARV:SeuRas:15,
+  author       = {H. Seuschek and S. Rass},
+  title        = {Side-Channel Leakage Models for RISC Instruction Set Architectures from Empirical Data},
+  booktitle    = {Euromicro Conference on Digital System Design},
+  pages        = {423--430},
+  year         = {2015}
+}
+
+@inproceedings{SCARV:SeuSanGui:17,
+  author       = {H. Seuschek and F. De Santis and O.M. Guillen},
+  title        = {Side-channel leakage aware instruction scheduling},
+  booktitle    = {Cryptography and Security in Computing Systems (CS2)},
+  pages        = {7--12},
+  year         = {2017}
+}
 
 @inproceedings{SCARV:KZDN:18,
   author       = {J.R. Kiniry and D.M. Zimmerman and R. Dockins and R. Nikhil},
@@ -495,14 +668,6 @@
   pages        = {586--595},
   year         = {2004}
 }
-
-@inproceedings{SCARV:NSSKM:17,
- author        = {M. Nemec and M. Sys and P. Svenda and D. Klinec and V. Matyas},
- title         = {The Return of {Coppersmith's} Attack: Practical Factorization of Widely Used {RSA} Moduli},
- booktitle     = {Computer and Communications Security (CCS)},
- pages         = {1631--1648},
- year          = {2017}
-} 
 
 @inproceedings{SCARV:VejPagGro:07,
   author       = {T. Vejda and D. Page and J. Gro{\ss}sch\"{a}dl},
@@ -600,14 +765,6 @@
   year         = {2008}
 }
 
-@inproceedings{SCARV:WuWeaAus:01,
-  author       = {L. Wu and C. Weaver and T. Austin},
-  title        = {{CryptoManiac}: A Fast Flexible Architecture for Secure Communication},
-  booktitle    = {International Symposium on Computer Architecture (ISCA)},
-  pages        = {110--119},
-  year         = {2001}
-} 
-
 @inproceedings{SCARV:FazLopOli:18,
   author       = {A. Faz-Hernandez and J. L\'{o}pez and A.K.D.S. de Oliveira},
   title        = {{SoK}: A Performance Evaluation of Cryptographic Instruction Sets on Modern Architectures},
@@ -658,14 +815,6 @@
   year         = {2018}
 }
 
-@inproceedings{SCARV:AweAus:17,
-  author       = {Z.B. Aweke and T.M. Austin},
-  title        = {{Ozone}: Efficient Execution with Zero Timing Leakage for Modern Microarchitectures},
-  booktitle    = {Hardware Oriented Security and Trust (HOST)},
-  pages        = {153},
-  year         = {2017}
-}
-
 @inproceedings{SCARV:GroTilSze:07,
   author       = {J. Gro{\ss}sch\"{a}dl and S. Tillich and A. Szekely},
   title        = {Performance Evaluation of Instruction Set Extensions for Long Integer Modular Arithmetic on a {SPARC} {V8} Processor},
@@ -698,6 +847,17 @@
   series       = {LNCS 3919},
   pages        = {277--297},
   year         = {2005}
+}
+
+% -----------------------------------------------------------------------------
+% IEEE MICRO
+
+@inproceedings{SCARV:CalZajPrv:14,
+  author       = {R.L. Callan and A.G. Zaji\'{c} and M. Prvulovic},
+  title        = {A Practical Methodology for Measuring the Side-Channel Signal Available to the Attacker for Instruction-Level Events},
+  booktitle    = {IEEE/ACM International Symposium on Microarchitecture (MICRO)},
+  pages        = {242--254},
+  year         = {2014}
 }
 
 % -----------------------------------------------------------------------------
@@ -773,8 +933,37 @@
   year         = {2001}
 }
 
+@article{SCARV:DMWS:13,
+  author       = {J. Demme and R. Martin and A. Waksman and S. Sethumadhavan},
+  title        = {A Quantitative, Experimental Approach to Measuring Processor Side-Channel Security},
+  journal      = {IEEE Micro},
+  volume       = {33},
+  issue        = {3},
+  pages        = {68--77},
+  year         = {2013}
+}
+
 % -----------------------------------------------------------------------------
 % misc.
+
+@article{SCARV:KAZP:18,
+  author       = {H.A. Khan and M. Alam and A. Zajic and M. Prvulovic},
+  title        = {Detailed tracking of program control flow using analog side-channel signals: a promise for {IoT} malware detection and a threat for many cryptographic implementations},
+  journal      = {Cyber Sensing},
+  volume       = {10630},
+  publisher    = {SPIE},
+  year         = {2018}
+}
+
+@article{SCARV:AmdBlaBro:64,
+  author  = {G.M. Amdahl and G.A. Blaauw and F.P. Brooks},
+  title   = {Architecture of the {IBM} {System/360}},
+  journal = {IBM Journal of Research and Development},
+  volume  = {8},
+  issue   = {2},
+  pages   = {87-101},
+  year    = {1964}
+}
 
 @article{SCARV:BDPAK:12,
   title={Keccak implementation overview},
@@ -782,7 +971,6 @@
   journal={URL: http://keccak. neokeon. org/Keccak-implementation-3.2. pdf},
   year={2012}
 }
-
 
 @inproceedings{SCARV:DemNjoZ3:08,
   title={Z3: An efficient SMT solver},
@@ -905,6 +1093,13 @@
 
 % =============================================================================
 
+@misc{SCARV:DieAbdKap:19,
+  author       = {W. Diehl and A. Abdulgadir and J.-P. Kaps},
+  title        = {Vulnerability Analysis of a Soft Core Processor through Fine-grain Power Profiling},
+  howpublished = {Cryptology ePrint Archive, Report 2019/742},
+  year         = {2019}
+}
+
 @article{SCARV:StePre:18,
   author       = {J. Stecklina and T. Prescher},
   title        = {{LazyFP}: Leaking {FPU} Register State using Microarchitectural Side-Channels},
@@ -923,6 +1118,14 @@
   url          = {http://arxiv.org/abs/1511.01946}
 }
 
+@misc{MASCAB:Szefer:16,
+  author       = {J. Szefer},
+  title        = {Survey of Microarchitectural Side and Covert Channels, Attacks, and Defences},
+  howpublished = {Cryptology ePrint Archive, Report 2016/479},
+  year         = {2016},
+  url          = {http://eprint.iacr.org/2016/479}
+}
+
 @misc{SCARV:WJWDGSN:18,
   author       = {W. Wang and B. Jungk and J. W\"{a}lde and S. Deng and N. Gupta and J. Szefer and R. Niederhagen},
   title        = {{XMSS} and Embedded Systems - {XMSS} Hardware Accelerators for {RISC-V}},
@@ -932,7 +1135,7 @@
 }
 
 @misc{SCARV:YHEF:18,
-  author       = {J. Yu and L. Hsiung and M. El Hajj† and C.W. Fletcher},
+  author       = {J. Yu and L. Hsiung and M. El Hajj and C.W. Fletcher},
   title        = {Data Oblivious {ISA} Extensions for Side Channel-Resistant and High Performance Computing},
   howpublished = {Cryptology ePrint Archive, Report 2018/808},
   year         = {2018},

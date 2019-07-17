@@ -63,7 +63,7 @@ macro
 style
 
 ./tex/latex/macro:
-scarv-lab.sty
+scarv-sca3s.sty
 scarv-notation.sty
 scarv-xcrypto.sty
 
