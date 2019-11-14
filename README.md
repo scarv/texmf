@@ -1,5 +1,7 @@
 # SCARV-related document preparation assets
 
+<!--- -------------------------------------------------------------------- --->
+
 This repository houses a range of assets which support the preparation of
 various SCARV-related documents (e.g., research papers, technical reports, 
 presentation slides); it's not *only* for LaTeX-based assets, but the
@@ -82,3 +84,5 @@ name seemed like a reasonable(ish), if imprecise, one given the remit.
        ```
        make all
        ```
+
+<!--- -------------------------------------------------------------------- --->
