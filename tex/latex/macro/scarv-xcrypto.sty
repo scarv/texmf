@@ -14,13 +14,15 @@
 
 \newcommand{\XCRYPTOSYNTAXUSE}[1]{\csname rmk-#1\endcsname}
 
-\newcommandx{\XCRYPTOINSTR}[4]{
+\newcommandx{\XCRYPTOINSTR}[5]{
   \paragraph{\VERB[RV]{#1}}
   \label{sec:spec:instruction:#1} \XCRYPTOSYNTAXDEF{#1}{#2}
 
   \begin{itemize}[labelindent=0pt,align=left,noitemsep,leftmargin=*]
-  \item {\bf Description:} 
+  \item {\bf Compatibility:}
         #3
+  \item {\bf Description:} 
+        #4
   \item {\bf Encoding:}
 
         \begin{center}
@@ -37,7 +39,7 @@
         \begin{array}{c}
         \begin{algorithm}[H]
         \Begin {
-          #4
+          #5
         }
         \end{algorithm}
         \end{array}

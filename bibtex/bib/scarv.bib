@@ -56,6 +56,16 @@
 % -----------------------------------------------------------------------------
 % TCHES
 
+@article{SCARV:GMPP:20,
+  author       = {S. Gao and B. Marshall and D. Page and T. Pham},
+  title        = {{FENL}: an {ISE} to mitigate analogue micro-architectural leakage},
+  journal      = {IACR Transactions on Cryptographic Hardware and Embedded Systems (TCHES)},
+  volume       = {2020},
+  number       = {2},
+  pages        = {73--98}, 
+  year         = {2020}
+}
+
 @article{SCARV:SLLH:18,
   author       = {H. Seo and Z. Liu and P. Longa and Z. Hu},
   title        = {{SIDH} on {ARM}: Faster Modular Multiplications for Faster Post-Quantum Supersingular Isogeny Key Exchange},
@@ -621,6 +631,15 @@
 % -----------------------------------------------------------------------------
 % misc.
 
+@inproceedings{SCARV:Miller:85,
+  author       = {V. Miller},
+  title        = {Uses of Elliptic Curves in Cryptography},
+  booktitle    = {Advances in Cryptology (CRYPTO)},
+  publisher    = {Springer-Verlag LNCS 218},
+  pages        = {417--426},
+  year         = {1985}
+}
+
 @inproceedings{SCARV:MsgMarMay:13,
   author       = {M. Msgna and K. Markantonakis and K. Mayes},
   title        = {The {B}-Side of Side Channel Leakage: Control Flow Security in Embedded Systems},
@@ -1007,13 +1026,23 @@
 }
 
 @article{SCARV:AmdBlaBro:64,
-  author  = {G.M. Amdahl and G.A. Blaauw and F.P. Brooks},
-  title   = {Architecture of the {IBM} {System/360}},
-  journal = {IBM Journal of Research and Development},
-  volume  = {8},
-  issue   = {2},
-  pages   = {87-101},
-  year    = {1964}
+  author       = {G.M. Amdahl and G.A. Blaauw and F.P. Brooks},
+  title        = {Architecture of the {IBM} {System/360}},
+  journal      = {IBM Journal of Research and Development},
+  volume       = {8},
+  issue        = {2},
+  pages        = {87-101},
+  year         = {1964}
+}
+
+@article{SCARV:Shuwang:16,
+  author       = {L. Shuwang},
+  title        = {Overview on {SM4} Algorithm},
+  journal      = {Journal of Information Security Research},
+  volume       = {2},
+  number       = {11},
+  pages        = {995--1007},
+  year         = {2016}
 }
 
 @article{SCARV:BDPAK:12,
@@ -1112,6 +1141,26 @@
   year         = {2008}
 }
 
+@article{SCARV:RivShaAdl:78,
+  author       = {R.L. Rivest and A. Shamir and L. Adleman},
+  title        = {A Method for Obtaining Digital Signatures and Public-Key Cryptosystems},
+  journal      = {Communications of the ACM (CACM)}, 
+  volume       = {21},
+  number       = {2}, 
+  pages        = {120--126}, 
+  year         = {1978}
+}
+
+@article{SCARV:Koblitz:87,
+  author       = {N. Koblitz},
+  title        = {Elliptic Curve Cryptosystems},
+  journal      = {Mathematics of Computation}, 
+  volume       = {48},
+  number       = {177},
+  pages        = {203--209}, 
+  year         = {1987}
+}
+
 @article{SCARV:Mittal:16,
   author       = {S. Mittal},
   title        = {A Survey of Techniques for Architecting and Managing Asymmetric Multicore Processors},
@@ -1164,6 +1213,14 @@
 
 % -----------------------------------------------------------------------------
 
+@misc{SCARV:AELNP:20,
+  author       = {E. Alkim and H. Evkan and N. Lahr and R. Niederhagen and R. Petri},
+  title        = {{ISA} Extensions for Finite Field Arithmetic - Accelerating {Kyber} and {NewHope} on {RISC-V}},
+  howpublished = {Cryptology ePrint Archive, Report 2020/049},
+  year         = {2020},
+  url          = {https://eprint.iacr.org/2020/049}
+}
+
 @misc{SCARV:Saarinen:19,
   author       = {M.-J. O. Saarinen},
   title        = {{SNEIK} on Microcontrollers: {AVR}, {ARMv7-M}, and {RISC-V} with Custom Instructions},
@@ -1211,6 +1268,14 @@
   year         = {2016},
   url          = {http://eprint.iacr.org/2016/479}
 }
+
+@misc{SCARV:DifLed:08,
+  author       = {W. Diffie and G. Ledin},
+  title        = {{SMS4} Encryption Algorithm for Wireless Networks},
+  howpublished = {Cryptology ePrint Archive, Report 2008/329},
+  year         = {2008},
+  url          = {https://eprint.iacr.org/2008/329}
+} 
 
 % -----------------------------------------------------------------------------
 
@@ -1344,6 +1409,13 @@
   url          = {http://csrc.nist.gov}
 }
 
+@misc{SCARV:FIPS:180,
+  title        = {{S}ecure {H}ash {S}tandard ({SHS})},
+  howpublished = {National Institute of Standards and Technology (NIST) Federal Information Processing Standard (FIPS) 180-4},
+  year         = {2015},
+  url          = {http://csrc.nist.gov}
+}
+
 @misc{SCARV:FIPS:197,
   title        = {{A}dvanced {E}ncryption {S}tandard ({AES})},
   howpublished = {National Institute of Standards and Technology (NIST) Federal Information Processing Standard (FIPS) 197},
@@ -1359,6 +1431,14 @@
 }
 
 % -----------------------------------------------------------------------------
+
+@misc{SCARV:RFC:2119,
+  author       = {S. Bradner},
+  title        = {Key words for use in {RFCs} to Indicate Requirement Levels},
+  howpublished = {Internet Engineering Task Force (IETF) Request for Comments (RFC) 2119},
+  year         = {1997},
+  url          = {http://tools.ietf.org/html/rfc2119}
+}
 
 @misc{SCARV:RFC:4086,
   author       = {D. Eastlake and J. Schiller and S. Crocker},
@@ -1396,24 +1476,31 @@
   url          = {http://www.sifive.com/documentation/risc-v-core/e31-risc-v-core-ip-manual},
 }
 
-@techreport{SCARV:RV:ISA:I:17,
+@techreport{SCARV:RV:ISA:I,
   editor       = {A. Waterman and K. Asanovi\'{c}},
   title        = {The {RISC-V} Instruction Set Manual},
-  number       = {Volume  I: User-Level ISA (Version 2.2)},
-  year         = {2017},
-  url          = {http://riscv.org/specifications/}
+  number       = {Volume  I: User-Level ISA          (Version 20191213)},
+  year         = {2019},
+  url          = {http://riscv.org/specifications}
 }
 
-@techreport{SCARV:RV:ISA:II:17,
+@techreport{SCARV:RV:ISA:II,
   editor       = {A. Waterman and K. Asanovi\'{c}},
   title        = {The {RISC-V} Instruction Set Manual},
-  number       = {Volume II: Privileged Architecture (Version 1.10)},
-  year         = {2017},
-  url          = {http://riscv.org/specifications/}
+  number       = {Volume II: Privileged Architecture (Version 20190608-Priv-MSU-Ratified)},
+  year         = {2019},
+  url          = {http://riscv.org/specifications}
 }
 
 % -----------------------------------------------------------------------------
 % ARM
+
+@techreport{SCARV:ARMglossary:20,
+  title        = {{ARM} Glossary},
+  institution  = {ARM Ltd.},
+  year         = {2020},
+  url          = {http://infocenter.arm.com/help/topic/com.arm.doc.aeg0014h/index.html}
+}
 
 @techreport{SCARV:ARMv5:05,
   title        = {{ARMv5}    {A}rchitecture {R}eference {M}anual},
