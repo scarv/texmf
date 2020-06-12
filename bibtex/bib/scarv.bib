@@ -30,6 +30,15 @@
 % -----------------------------------------------------------------------------
 % CRYPTO
 
+@inproceedings{SCARV:Miller:85,
+  author       = {V. Miller},
+  title        = {Uses of Elliptic Curves in Cryptography},
+  booktitle    = {Advances in Cryptology (CRYPTO)},
+  publisher    = {Springer-Verlag LNCS 218},
+  pages        = {417--426},
+  year         = {1985}
+}
+
 @inproceedings{SCARV:KocJafJun:99,
   author       = {P.C. Kocher and J. Jaffe and B. Jun},
   title        = {Differential Power Analysis},
@@ -133,7 +142,8 @@
   author       = {F. Regazzoni and A. Cevrero and F.-X. Standaert and S. Badel and T. Kluter and P. Brisk and Y. Leblebici and P. Ienne},
   title        = {A Design Flow and Evaluation Framework for {DPA}-Resistant Instruction Set Extensions},
   booktitle    = {Cryptographic Hardware and Embedded Systems (CHES)},
-  publisher    = {Springer-Verlag LNCS 5747}, 
+  publisher    = {Springer-Verlag},
+  series       = {LNCS 5747}, 
   pages        = {205--219}, 
   year         = {2009}
 }
@@ -142,7 +152,8 @@
   author       = {E. K\"{a}sper and P. Schwabe},
   title        = {Faster and Timing-attack Resistant {AES-GCM}},
   booktitle    = {Cryptographic Hardware and Embedded Systems (CHES)},
-  publisher    = {Springer-Verlag LNCS 5747}, 
+  publisher    = {Springer-Verlag},
+  series       = {LNCS 5747}, 
   pages        = {1--17}, 
   year         = {2009}
 }
@@ -151,7 +162,8 @@
   author       = {M. Hamburg},
   title        = {Accelerating {AES} with Vector Permute Instructions},
   booktitle    = {Cryptographic Hardware and Embedded Systems (CHES)},
-  publisher    = {Springer-Verlag LNCS 5747}, 
+  publisher    = {Springer-Verlag},
+  series       = {LNCS 5747}, 
   pages        = {18--32}, 
   year         = {2009}
 }
@@ -626,16 +638,31 @@
 }
 
 % -----------------------------------------------------------------------------
-% misc.
+% CARRV
 
-@inproceedings{SCARV:Miller:85,
-  author       = {V. Miller},
-  title        = {Uses of Elliptic Curves in Cryptography},
-  booktitle    = {Advances in Cryptology (CRYPTO)},
-  publisher    = {Springer-Verlag LNCS 218},
-  pages        = {417--426},
-  year         = {1985}
+@inproceedings{SCARV:KZDN:18,
+  author       = {J.R. Kiniry and D.M. Zimmerman and R. Dockins and R. Nikhil},
+  title        = {A Formally Verified Cryptographic Extension to a {RISC-V} Processor}, 
+  booktitle    = {Computer Architecture Research with RISC-V (CARRV)},
+  year         = {2018}
 }
+
+@inproceedings{SCARV:EFLL:20,
+  author       = {M. Escouteloup and J.J.A. Fournier and J.-L. Lanet and R. Lashermes},
+  title        = {Recommendations for a Radically Secure {ISA}}, 
+  booktitle    = {Computer Architecture Research with RISC-V (CARRV)},
+  year         = {2020}
+}
+
+@inproceedings{SCARV:WSGBH:20,
+  author       = {N. Wistoff and M. Schneider and F.K. G\"{u}rkaynak and L. Benini and G. Heiser},
+  title        = {Prevention of Microarchitectural Covert Channels on an Open-Source 64-bit {RISC-V} Core}, 
+  booktitle    = {Computer Architecture Research with RISC-V (CARRV)},
+  year         = {2020}
+}
+
+% -----------------------------------------------------------------------------
+% misc.
 
 @inproceedings{SCARV:MsgMarMay:13,
   author       = {M. Msgna and K. Markantonakis and K. Mayes},
@@ -679,13 +706,6 @@
   booktitle    = {Cryptography and Security in Computing Systems (CS2)},
   pages        = {7--12},
   year         = {2017}
-}
-
-@inproceedings{SCARV:KZDN:18,
-  author       = {J.R. Kiniry and D.M. Zimmerman and R. Dockins and R. Nikhil},
-  title        = {A Formally Verified Cryptographic Extension to a {RISC-V} Processor}, 
-  booktitle    = {Computer Architecture Research with RISC-V (CARRV)},
-  year         = {2018}
 }
 
 @inproceedings{SCARV:ManGre:10,
