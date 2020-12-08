@@ -48,4 +48,14 @@
   \end{itemize}
 }
 
+% -----------------------------------------------------------------------------
+
+\newcommandx{\BMASK}[2]  {#1 \XOR #2\xspace}  
+\newcommandx{\BUNMASK}[2]{#1 \XOR #2\xspace}
+\newcommandx{\BMASKED}[1]{\hat{#1}\xspace}
+
+\newcommandx{\AMASK}[2]  {#1 +    #2 \pmod{2^w}\xspace}
+\newcommandx{\AUNMASK}[2]{#1 -    #2 \pmod{2^w}\xspace}
+\newcommandx{\AMASKED}[1]{\bar{#1}\xspace}
+
 % =============================================================================
