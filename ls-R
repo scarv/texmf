@@ -63,8 +63,9 @@ macro
 style
 
 ./tex/latex/macro:
-scarv-sca3s.sty
+scarv-miracle.sty
 scarv-notation.sty
+scarv-sca3s.sty
 scarv-xcrypto.sty
 
 ./tex/latex/style:
