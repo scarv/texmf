@@ -52,8 +52,10 @@
 \usetikzlibrary{fit}
 
 \usepackage{scarv-notation}
-\usepackage{scarv-xcrypto}
+
+\usepackage{scarv-miracle}
 \usepackage{scarv-sca3s}
+\usepackage{scarv-xcrypto}
 
 % =============================================================================
 
