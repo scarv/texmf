@@ -132,6 +132,17 @@
 % -----------------------------------------------------------------------------
 % publication: COSADE
 
+@inproceedings{SCARV:KMDHS:20,
+  author        = {P. Kiaei and D. Mercadier and P.-E. Dagand and K. Heydemann and P. Schaumont},
+  title         = {Custom Instruction Support for Modular Defense Against Side-Channel and Fault Attacks},
+  booktitle     = {Constructive Side-Channel Analysis and Secure Design (COSADE)},
+  publisher     = {Springer-Verlag},
+  series        = {LNCS 12244}, 
+  pages         = {221--253}, 
+  year          = {2020},
+  note          = {\url{https://doi.org/10.1007/978-3-030-68773-1_11}}
+}
+
 @inproceedings{SCARV:CorGroDin:18,
   author        = {Y. Le Corre and J. Gro{\ss}sch\"{a}dl and D. Dinu},
   title         = {Micro-architectural Power Simulator for Leakage Assessment of Cryptographic Software on {ARM} {Cortex-M3} Processors},
@@ -1327,7 +1338,24 @@
 }
 
 % -----------------------------------------------------------------------------
+% patent
+
+@misc{SCARV:US:7949130B2,
+  author       = {S. Gueron and W.K. Feghali and V. Gopal},
+  title        = {Architecture and instruction set for implementing advanced encryption standard ({AES})},
+  howpublished = {U.S. Patent 7949130B2},
+  url          = {http://www.google.com/patents/US7949130B2}
+}
+
+% -----------------------------------------------------------------------------
 % theses
+
+@mscthesis{SCARV:Rawat:16,
+  author        = {H.K. Rawat},
+  title         = {Vector Instruction Set Extensions for Efficient and Reliable Computation of Keccak},
+  school        = {Virginia Polytechnic Institute and State University},
+  year          = {2016}
+}
 
 @phdthesis{SCARV:Waterman:16,
   author        = {A. Waterman},
@@ -1636,7 +1664,7 @@
 @techreport{SCARV:RV:ISA:I:19,
   editor        = {A. Waterman and K. Asanovi\'{c}},
   title         = {The {RISC-V} Instruction Set Manual},
-  number        = {Volume  I: User-Level ISA          (Version 20190608-Base-Ratified)},
+  number        = {Volume  I: User-Level ISA          (version 20190608-Base-Ratified)},
   year          = {2019},
   note          = {\url{http://riscv.org/specifications}}
 }
@@ -1644,9 +1672,32 @@
 @techreport{SCARV:RV:ISA:II:19,
   editor        = {A. Waterman and K. Asanovi\'{c}},
   title         = {The {RISC-V} Instruction Set Manual},
-  number        = {Volume II: Privileged Architecture (Version 20190608-Priv-MSU-Ratified)},
+  number        = {Volume II: Privileged Architecture (version 20190608-Priv-MSU-Ratified)},
   year          = {2019},
   note          = {\url{http://riscv.org/specifications}}
+}
+
+@techreport{SCARV:RV:bitmanip:21,
+  editor        = {C. Wolf},
+  title         = {{RISC-V} Bit-Manipulation {ISA}-extensions (version 0.94-draft)},
+  year          = {2021},
+  note          = {\url{https://github.com/riscv/riscv-bitmanip}}
+}
+
+@techreport{SCARV:RV:crypto:I:21,
+  editor        = {B. Marshall},
+  title         = {{RISC-V} Cryptographic Extension Proposals},
+  number        = {Volume  I: Scalar \& Entropy Source Instructions (version 0.9.1)},
+  year          = {2021},
+  note          = {\url{https://github.com/riscv/riscv-crypto}}
+}
+
+@techreport{SCARV:RV:crypto:II:21,
+  editor        = {B. Marshall},
+  title         = {{RISC-V} Cryptographic Extension Proposals},
+  number        = {Volume II: Vector                   Instructions (version 0.7.0)},
+  year          = {2021},
+  note          = {\url{https://github.com/riscv/riscv-crypto}}
 }
 
 % -----------------------------------------------------------------------------
@@ -1817,6 +1868,130 @@
 
 % =============================================================================
 % unclassified, i.e., misc.
+
+@inproceedings{SCARV:LWDZ:15,
+  author        = {W. Liao and M. Wan and K. Dai and X. Zou},
+  title         = {Scalable Instruction Set Extension for Dual-field Public-key Cryptosystem }, 
+  booktitle     = {International MultiConference of Engineers and Computer Scientists}, 
+  pages         = {129--133},
+  year          = {2015}
+}
+
+@article{SCARV:YHMH:19,
+  author        = {X. Yang and Y. Hou and J. Ma and H. He},
+  title         = {{CDSP}: A Solution for Privacy and Security of Multimedia Information Processing in Industrial Big Data and {Internet of Things}},
+  journal       = {Sensors},
+  volume        = {19},
+  number        = {3},
+  pages         = {556:1--556:16},
+  year          = {2019},
+  note          = {\url{https://doi.org/10.3390/s19030556}}
+}
+
+@inproceedings{SCARV:HodVer:04,
+  author        = {A. Hodjat and I. Verbauwhede},
+  title         = {Interfacing a high speed crypto accelerator to an embedded {CPU}}, 
+  booktitle     = {Asilomar Conference on Signals, Systems and Computers (ACSSC)}, 
+  pages         = {488--492},
+  year          = {2004},
+  note          = {\url{https://doi.org/10.1109/ACSSC.2004.1399180}}
+}
+
+@inproceedings{SCARV:BBGM:04,
+  author        = {S. Bartolini and I. Branovic and R. Giorgi and E. Martinelli},
+  title         = {A performance evaluation of {ARM} {ISA} extension for elliptic curve cryptography over binary finite fields}, 
+  booktitle     = {Symposium on Computer Architecture and High Performance Computing (SBAC-PAD)}, 
+  pages         = {238--245},
+  year          = {2004},
+  note          = {\url{https://doi.org/10.1109/SBAC-PAD.2004.5}}
+}
+
+@article{SCARV:MajDia:07,
+  author        = {S. Majzoub and H. Diab},
+  title         = {Instruction-Set Extension For Cryptographic Applications On Reconfigurable Platform},
+  journal       = {Journal of Circuits, Systems and Computers},
+  volume        = {16},
+  number        = {6},
+  pages         = {911--927},
+  year          = {2007},
+  note          = {\url{https://doi.org/10.1142/S0218126607004076}}
+}
+
+@article{SCARV:ShaEshMir:17,
+  author        = {K. Shahbazi and M. Eshghi and R.F. Mirzaee},
+  title         = {Design and implementation of an {ASIP}-based cryptography processor for {AES}, {IDEA}, and {MD5}},
+  journal       = {Engineering Science and Technology, an International Journal (JESTECH))},
+  volume        = {20},
+  number        = {4},
+  pages         = {1308--1317},
+  year          = {2017},
+  note          = {\url{https://doi.org/10.1016/j.jestch.2017.07.002}}
+}
+
+@inproceedings{SCARV:RawSch:16,
+  author        = {H.K. Rawat and P. Schaumont},
+  title         = {{SIMD} Instruction Set Extensions for {Keccak} with Applications to {SHA-3}, {Keyak} and {Ketje}},
+  booktitle     = {Hardware and Architectural Support for Security and Privacy (HASP)},
+  pages         = {1--8},
+  year          = {2016},
+  note          = {\url{https://doi.org/10.1145/2948618.2948622}}
+}
+
+@inproceedings{SCARV:MarPagPha:20,
+  author        = {B. Marshall and D. Page and T.H. Pham},
+  title         = {Implementing the Draft {RISC-V} Scalar Cryptography Extensions},
+  booktitle     = {Hardware and Architectural Support for Security and Privacy (HASP)},
+  pages         = {},
+  year          = {2020},
+  note          = {\url{}}
+}
+
+@inproceedings{SCARV:SaaNewMar:20,
+  author        = {M.-J.O. Saarinen and G.R. Newell and B. Marshall},
+  title         = {Building a Modern {TRNG}: An Entropy Source Interface for {RISC-V}},
+  booktitle     = {Attacks and Solutions in Hardware Security (ASHES)},
+  pages         = {93--102},
+  year          = {2020},
+  note          = {\url{https://doi.org/10.1145/3411504.3421212}}
+}
+
+@article{SCARV:BhaSilPra:13,
+  author        = {P. Bhagyasree and C. Silpa and M.J.C. Prasad},
+  title         = {A Novel {RISC} Processor with Crypto Specific Instruction Set},
+  journal       = {International Journal of Soft Computing and Engineering (IJSCE)},
+  volume        = {3},
+  number        = {5},
+  pages         = {124--128},
+  year          = {2013}
+}
+
+@article{SCARV:DivRao:14,
+  author        = {K.L. Divya and S.H. Rao},
+  title         = {Implementation Of {Cryptographic} {Risc} {Processor} ({CRISC})},
+  journal       = {International Journal of Innovative Science, Engineering \& Technology (IJISET)},
+  volume        = {1},
+  number        = {10},
+  pages         = {358--363},
+  year          = {2014}
+}
+
+@inproceedings{SCARV:VSIYGAIAU:19,
+  author        = {A. Varici and G. Saglam and S. Ipek and A. Yildiz and S. G\"{o}ren and A. Aysu and D. Iskender and T.B. Aktemur and H.F. Ugurdag},
+  title         = {Fast and Efficient Implementation of Lightweight Crypto Algorithm {PRESENT} on {FPGA} through Processor Instruction Set Extension},
+  booktitle     = {East-West Design \& Test Symposium (EWDTS)},
+  pages         = {1--5},
+  year          = {2019},
+  note          = {\url{https://doi.org/10.1109/EWDTS.2019.8884397}}
+}
+
+@inproceedings{SCARV:ABCRGNMWFPFSKS:19,
+  author        = {A. Armstrong and T. Bauereiss and B. Campbell and A. Reid and K.E. Gray and R.M. Norton and P. Mundkur and M. Wassell and J. French and C. Pulte and S. Flur and I. Stark and N. Krishnaswami and P. Sewell},
+  title         = {{ISA} Semantics for {ARMv8-A, RISC-V, and CHERI-MIPS}},
+  booktitle     = {Principles of Programming Languages (POPL)},
+  pages         = {71:1--71:31},
+  year          = {2019},
+  note          = {\url{https://doi.org/10.1145/3290384}}
+}
 
 @article{SCARV:AtaPozIen:03,
   author        = {K. Atasu and L. Pozzi and P. Ienne},
@@ -2262,6 +2437,27 @@
   number        = {11},
   pages         = {995--1007},
   year          = {2016}
+}
+
+@article{SCARV:Elbirt:08,
+  author        = {A.J. Elbirt},
+  title         = {Accelerated {AES} Implementations via Generalized Instruction Set Extensions},
+  publisher     = {IOS Press},
+  journal       = {Journal of Computer Security},
+  volume        = {16},
+  number        = {3},
+  pages         = {265--288},
+  year          = {2008},
+  note          = {\url{}}
+}
+
+@inproceedings{SCARV:Elbirt:07,
+  author        = {A.J. Elbirt},
+  title         = {Fast and Efficient Implementation of {AES} via Instruction Set Extensions},
+  booktitle     = {Advanced Information Networking and Applications Workshops (AINAW)},
+  pages         = {396--403},
+  year          = {2007},
+  note          = {\url{https://doi.org/10.1109/AINAW.2007.182}}
 }
 
 @article{SCARV:BDPAK:12,
