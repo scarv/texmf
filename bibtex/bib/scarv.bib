@@ -157,6 +157,17 @@
 % -----------------------------------------------------------------------------
 % publication: TCHES
 
+@article{SCARV:GGMPPR:21,
+  author    = {S. Gao and J. Gro{\ss}sch\"{a}dl and B. Marshall and D. Page and T. Pham and F. Regazzoni},
+  title     = {An Instruction Set Extension to Support Software-Based Masking},
+  journal   = {IACR Transactions on Cryptographic Hardware and Embedded Systems (TCHES)},
+  volume    = {2021},
+  number    = {4},
+  pages     = {}, 
+  year      = {2021},
+  url       = {}
+}
+
 @article{SCARV:FriSigSep:20,
   author        = {T. Fritzmann and G. Sigl and J. Sep\'{u}lveda},
   title         = {{RISQ-V}: Tightly Coupled {RISC-V} Accelerators for Post-Quantum Cryptography},
@@ -225,6 +236,28 @@
 
 % -----------------------------------------------------------------------------
 % publication: CHES
+
+@inproceedings{SCARV:MatMor:12,
+  author        = {S. Matsuda and S. Moriai},
+  title         = {Lightweight Cryptography for the Cloud: Exploit the Power of Bitslice Implementation},
+  booktitle     = {Cryptographic Hardware and Embedded Systems (CHES)},
+  publisher     = {Springer-Verlag},
+  series        = {LNCS 7428},
+  pages         = {408--425},
+  year          = {2012},
+  note          = {\url{https://doi.org/10.1007/978-3-642-33027-8_24}}
+}
+
+@inproceedings{SCARV:SavTenKoc:00,
+  author        = {E. Sava\u{s} and A.F. Tenca and \c{C}.K. Ko\c{c}},
+  title         = {A Scalable and Unified Multiplier Architecture for Finite Fields GF($p$) and GF($2^m$)},
+  booktitle     = {Cryptographic Hardware and Embedded Systems (CHES)},
+  publisher     = {Springer-Verlag},
+  series        = {LNCS 1965},
+  pages         = {277--292},
+  year          = {2000},
+  note          = {\url{https://doi.org/10.1007/3-540-44499-8_22}}
+}
 
 @inproceedings{SCARV:KZSSLAAM:09,
   author        = {D. Kammler and D. Zhang and P. Schwabe and H. Scharwaechter and M. Langenberg and D. Auras and G. Ascheid and R. Mathar},
@@ -381,7 +414,7 @@
 }
 
 @inproceedings{SCARV:GAST:05,
-  author        = {J. Gro{\ss}sch\"{a}dl and R.M. Avanzi and E. Savas and S. Tillich},
+  author        = {J. Gro{\ss}sch\"{a}dl and R.M. Avanzi and E. Sava\c{s} and S. Tillich},
   title         = {Energy-Efficient Software Implementation of Long Integer Modular Arithmetic},
   booktitle     = {Cryptographic Hardware and Embedded Systems (CHES)},  
   publisher     = {Springer-Verlag},
@@ -392,7 +425,7 @@
 }
 
 @inproceedings{SCARV:GroSav:04,
-  author        = {J. Gro{\ss}sch\"{a}dl and E. Savas},
+  author        = {J. Gro{\ss}sch\"{a}dl and E. Sava\c{s}},
   title         = {Instruction Set Extensions for Fast Arithmetic in Finite Fields {$GF(p)$} and {$GF(2^m)$}},
   booktitle     = {Cryptographic Hardware and Embedded Systems (CHES)},  
   publisher     = {Springer-Verlag},
@@ -415,6 +448,17 @@
 
 % -----------------------------------------------------------------------------
 % publication: FSE
+
+@inproceedings{SCARV:Clapp:97,
+  author        = {C.S.K. Clapp},
+  title         = {Optimizing a fast stream cipher for {VLIW}, {SIMD}, and superscalar processors},
+  booktitle     = {Fast Software Encryption (FSE)},
+  publisher     = {Springer-Verlag},
+  series        = {LNCS 1267},
+  pages         = {273--287},
+  year          = {1997},
+  note          = {\url{https://doi.org/10.1007/BFb0052353}}
+}
 
 @inproceedings{SCARV:BogLauTis:15,
   author        = {A. Bogdanov and M.M. Lauridsen and E. Tischhauser},
@@ -619,7 +663,7 @@
 
 @inproceedings{SCARV:GroKam:03:b,
   author        = {J. Gro{\ss}sch\"{a}dl and G.-A. Kamendje},
-  title         = {Instruction Set Extension for Fast Elliptic Curve Cryptography over Binary Finite Fields {GF(2m)}},
+  title         = {Instruction Set Extension for Fast Elliptic Curve Cryptography over Binary Finite Fields {GF($2^m$)}},
   booktitle     = {Application-Specific Systems, Architectures, and Processors (ASAP)},
   pages         = {455--468},
   year          = {2003},
@@ -2126,6 +2170,13 @@
 % =============================================================================
 % unclassified, i.e., misc.
 
+@inproceedings{SCARV:GotMul:13,
+  author        = {J. G\"{o}tzfried and T. M\"{u}ller},
+  title         = {Fast Software Encryption with {SIMD} (How to speed up symmetric block ciphers with the {AVX/AVX2} instruction set)},
+  booktitle     = {European Workshop on System Security (EUROSEC)},
+  year          = {2013},
+}
+
 @article{SCARV:Szefer:19,
   author        = {J. Szefer},
   title         = {Survey of Microarchitectural Side and Covert Channels, Attacks, and Defences},
@@ -2257,7 +2308,7 @@
 
 @inproceedings{SCARV:LWDZ:15,
   author        = {W. Liao and M. Wan and K. Dai and X. Zou},
-  title         = {Scalable Instruction Set Extension for Dual-field Public-key Cryptosystem }, 
+  title         = {Scalable Instruction Set Extension for Dual-field Public-key Cryptosystem}, 
   booktitle     = {International MultiConference of Engineers and Computer Scientists}, 
   pages         = {129--133},
   year          = {2015}
@@ -2402,7 +2453,7 @@
 }
 
 @article{SCARV:YSKG:14,
-  author        = {K. Yumbul and E. Savas and \"{O}. Kocabas and J. Gro{\ss}sch\"{a}dl},
+  author        = {K. Yumbul and E. Sava\c{s} and \"{O}. Kocabas and J. Gro{\ss}sch\"{a}dl},
   title         = {Design and implementation of a versatile cryptographic unit for {RISC} processors},
   journal       = {Secure Communication Networks},
   volume        = {7},
@@ -2595,7 +2646,7 @@
   note          = {\url{https://doi.org/10.1007/978-3-540-73489-5_11}}
 }
 
-@inproceedings{SCARV:GroKam:03,
+@inproceedings{SCARV:GroKam:03:c,
   author        = {J. Gro{\ss}sch\"{a}dl and G.-A. Kamendje},
   title         = {Low-Power Design of a Functional Unit for Arithmetic in Finite Fields {GF(p)} and {GF(2m)}},
   booktitle     = {Workshop on Information Security Applications (WISA)},
@@ -2747,7 +2798,7 @@
 }
 
 @inproceedings{SCARV:KocSavGro:08,
-  author        = {\"{O}. Kocabas and E. Savas and J. Gro{\ss}sch\"{a}dl},
+  author        = {\"{O}. Kocabas and E. Sava\c{s} and J. Gro{\ss}sch\"{a}dl},
   title         = {Enhancing an Embedded Processor Core with a Cryptographic Unit for Speed and Security},
   booktitle     = {Reconfigurable Computing and FPGAs (ReConFig)},
   pages         = {409--414},
