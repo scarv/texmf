@@ -169,14 +169,14 @@
 % publication: TCHES
 
 @article{SCARV:GGMPPR:21,
-  author    = {S. Gao and J. Gro{\ss}sch\"{a}dl and B. Marshall and D. Page and T. Pham and F. Regazzoni},
-  title     = {An Instruction Set Extension to Support Software-Based Masking},
-  journal   = {IACR Transactions on Cryptographic Hardware and Embedded Systems (TCHES)},
-  volume    = {2021},
-  number    = {4},
-  pages     = {}, 
-  year      = {2021},
-  url       = {}
+  author        = {S. Gao and J. Gro{\ss}sch\"{a}dl and B. Marshall and D. Page and T. Pham and F. Regazzoni},
+  title         = {An Instruction Set Extension to Support Software-Based Masking},
+  journal       = {IACR Transactions on Cryptographic Hardware and Embedded Systems (TCHES)},
+  volume        = {2021},
+  number        = {4},
+  pages         = {}, 
+  year          = {2021},
+  url           = {}
 }
 
 @article{SCARV:FriSigSep:20,
@@ -1857,14 +1857,6 @@
   note          = {\url{https://eprint.iacr.org/2020/1608}}
 }
 
-@misc{SCARV:StePri:20,
-  author        = {S. Steinegger and R. Primas},
-  title         = {A Fast and Compact {RISC-V} Accelerator for {Ascon} and Friends},
-  howpublished  = {Cryptology ePrint Archive, Report 2020/1083},
-  year          = {2020},
-  note          = {\url{https://eprint.iacr.org/2020/1083}}
-}
-
 @misc{SCARV:Saarinen:19,
   author        = {M.-J. O. Saarinen},
   title         = {{SNEIK} on Microcontrollers: {AVR}, {ARMv7-M}, and {RISC-V} with Custom Instructions},
@@ -2035,6 +2027,88 @@
   note          = {\url{http://tools.ietf.org/html/rfc5246}}
 }
 
+% -----------------------------------------------------------------------------
+% standard: NIST lightweight candidates
+
+@misc{SCARV:NIST:LW:ascon,
+  author        = {C. Dobraunig and M. Eichlseder and F. Mendel and M. Schl\"{a}ffer},
+  title         = {Ascon},
+  howpublished  = {Submission to NIST (version $1.2$)},
+  year          = {2021},
+  note          = {\url{https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/finalist-round/updated-spec-doc/ascon-spec-final.pdf}}
+}
+
+@misc{SCARV:NIST:LW:elephant,
+  author        = {T. Beyne and Y.L. Chen and C. Dobraunig and B. Mennink},
+  title         = {Elephant},
+  howpublished  = {Submission to NIST (version $2.0$)},
+  year          = {2021},
+  note          = {\url{https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/finalist-round/updated-spec-doc/elephant-spec-final.pdf}}
+}
+
+@misc{SCARV:NIST:LW:gift,
+  author        = {S. Banik and A. Chakraborti and T. Iwata and K. Minematsu and M. Nandi and T. Peyrin and Y. Sasaki and S.M. Sim and Y. Todo},
+  title         = {{\sf GIFT-COFB}},
+  howpublished  = {Submission to NIST (version $1.1$)},
+  year          = {2021},
+  note          = {\url{https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/finalist-round/updated-spec-doc/gift-cofb-spec-final.pdf}}
+}
+
+@misc{SCARV:NIST:LW:grain,
+  author        = {M. Hell and T. Johansson and A. Maximov and W. Meier and J. S\"{o}nnerup and H. Yoshida},
+  title         = {{\tt Grain-128AEADv2}},
+  howpublished  = {Submission to NIST (version $2.0$)},
+  year          = {2021},
+  note          = {\url{https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/finalist-round/updated-spec-doc/grain-128aead-spec-final.pdf}}
+}
+
+@misc{SCARV:NIST:LW:isap,
+  author        = {C. Dobraunig and M. Eichlseder and S. Mangard and F. Mendel and B. Mennink and R. Primas and T. Unterluggauer},
+  title         = {{ISAP}},
+  howpublished  = {Submission to NIST (version $2.0$)},
+  year          = {2021},
+  note          = {\url{https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/finalist-round/updated-spec-doc/isap-spec-final.pdf}}
+}
+
+@misc{SCARV:NIST:LW:photon,
+  author        = {Z. Bao and A. Chakraborti and N. Datta and J. Guo and M. Nandi and T. Peyrin and K. Yasuda},
+  title         = {{\tt PHOTON}-{\sf Beetle}},
+  howpublished  = {Submission to NIST},
+  year          = {2021},
+  note          = {\url{https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/finalist-round/updated-spec-doc/photon-beetle-spec-final.pdf}}
+}
+
+@misc{SCARV:NIST:LW:romulus,
+  author        = {{\sf Romulus}},
+  title         = {C. Guo and T. Iwata and M. Khairallah and K. Minematsu and T. Peyrin},
+  howpublished  = {Submission to NIST (version $1.3$)},
+  year          = {2021},
+  note          = {\url{https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/finalist-round/updated-spec-doc/romulus-spec-final.pdf}}
+}
+
+@misc{SCARV:NIST:LW:sparkle,
+  author        = {C. Beierle and A. Biryukov and L. Cardoso dos Santos and J. Gro{\ss}sch\"{a}dl and Amir Moradi and L. Perrin and A.R. Shahmirzadi and A. Udovenko and V. Velichkov and Q. Wang},
+  title         = {{\sc Schwaemm} and {\sc Esch}: Lightweight Authenticated Encryption and Hashing using the {\sc SPARKLE} Permutation Family},
+  howpublished  = {Submission to NIST (version $1.2$)},
+  year          = {2021},
+  note          = {\url{https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/finalist-round/updated-spec-doc/sparkle-spec-final.pdf}}
+}
+
+@misc{SCARV:NIST:LW:jambu,
+  author        = {H. Wu and T. Huang},
+  title         = {{TinyJAMBU}},
+  howpublished  = {Submission to NIST (version $2.0$)},
+  year          = {2021},
+  note          = {\url{https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/finalist-round/updated-spec-doc/tinyjambu-spec-final.pdf}}
+}
+
+@misc{SCARV:NIST:LW:xoodyak,
+  author        = {J. Daemen and S. Hoffert and S. Mella and M. Peeters and G. van Assche and R. van Keer},
+  title         = {{Xoodyak}, a lightweight cryptographic scheme},
+  howpublished  = {Submission to NIST (version $2.0$)},
+  year          = {2021},
+  note          = {\url{https://csrc.nist.gov/CSRC/media/Projects/lightweight-cryptography/documents/finalist-round/updated-spec-doc/xoodyak-spec-final.pdf}}
+}
 
 % -----------------------------------------------------------------------------
 % tech. report: CRI/Rambus
@@ -2271,6 +2345,17 @@
 
 % =============================================================================
 % unclassified, i.e., misc.
+
+@inproceedings{SCARV:StePri:21,
+  author        = {S. Steinegger and R. Primas},
+  title         = {A Fast and Compact {RISC-V} Accelerator for {Ascon} and Friends},
+  booktitle     = {Smart Card Research and Advanced Applications (CARDIS)},
+  publisher     = {Springer-Verlag},
+  series        = {LNCS 12609},
+  pages         = {53--67},
+  year          = {2021},
+  note          = {\url{https://doi.org/10.1007/978-3-030-68487-7_4}}
+}
 
 @article{SCARV:SolAbo:10,
   author        = {M.I. Soliman and G. Y. Abozaid},
@@ -3226,7 +3311,7 @@
 
 @techreport{SCARV:XS1:09,
   author        = {D. May},
-  title         = {The XMOS XS1 Architecture},
+  title         = {The {XMOS} {XS1} Architecture},
   institution   = {XMOS Ltd.},
   year          = {2009},
   note          = {\url{http://www.xmos.com/published/xmos-xs1-architecture}}
