@@ -188,6 +188,31 @@
 }
 
 % -----------------------------------------------------------------------------
+% publication: CARDIS
+
+@inproceedings{SCARV:StePri:21,
+  author        = {S. Steinegger and R. Primas},
+  title         = {A Fast and Compact {RISC-V} Accelerator for {Ascon} and Friends},
+  booktitle     = {Smart Card Research and Advanced Applications (CARDIS)},
+  publisher     = {Springer-Verlag},
+  series        = {LNCS 12609},
+  pages         = {53--67},
+  year          = {2021},
+  note          = {\url{https://doi.org/10.1007/978-3-030-68487-7_4}}
+}
+
+@inproceedings{SCARV:PelMueHut:12,
+  author        = {M. Pelnar and M. Muehlberghuber and M. Hutter},
+  title         = {Putting together What Fits together - {Gr{\AE}tl}},
+  booktitle     = {Smart Card Research and Advanced Applications (CARDIS)},
+  publisher     = {Springer-Verlag},
+  series        = {LNCS 7771},
+  pages         = {173–-187},
+  year          = {2012},
+  note          = {\url{https://doi.org/10.1007/978-3-642-37288-9_12}}
+}
+
+% -----------------------------------------------------------------------------
 % publication: TCHES
 
 @article{SCARV:AdoNajPey:20,
@@ -1972,6 +1997,14 @@
   year          = {2004}
 }
 
+@thesis{SCARV:Dinu:17,
+  author        = {D. Dinu},
+  title         = {Efficient and Secure Implementations of Lightweight Symmetric Cryptographic Primitives},
+  type          = {PhD thesis},
+  institute     = {University of Luxembourg},
+  year          = {2017}
+}
+
 % -----------------------------------------------------------------------------
 % book: Addison Wesley
 
@@ -2300,7 +2333,7 @@
 }
 
 % -----------------------------------------------------------------------------
-% standard: NIST lightweight candidates
+% standard: NIST LWC
 
 @misc{SCARV:NIST:LWC:call,
   title         = {Submission Requirements and Evaluation Criteria for the Lightweight Cryptography Standardization Process},
@@ -2432,7 +2465,7 @@
 }
 
 % -----------------------------------------------------------------------------
-% standard: NIST lightweight workshops
+% standard: NIST LWC   workshops
 
 @inproceedings{SCARV:AdoPey:20,
   author        = {A. Adomnicai and T. Peyrin},
@@ -2440,6 +2473,17 @@
   booktitle     = {$4$-th Lightweight Cryptography Workshop},
   year          = {2020},
   note          = {\url{https://csrc.nist.gov/Events/2020/lightweight-cryptography-workshop-2020}}
+}
+
+% -----------------------------------------------------------------------------
+% standard: NIST SHA-3 workshops
+
+@inproceedings{SCARV:Jaarvinen:10,
+  author        = {K. J\"{a}arvinen},
+  title         = {Sharing Resources Between {AES} and the {SHA-3} Second Round Candidates {Fugue} and {Gr{\o}stl}},
+  booktitle     = {$2$-nd SHA-3 Candidate Conference},
+  year          = {2010},
+  note          = {\url{https://csrc.nist.gov/events/2010/the-second-sha-3-candidate-conference}}
 }
 
 % -----------------------------------------------------------------------------
@@ -2711,6 +2755,43 @@
 % =============================================================================
 % unclassified, i.e., misc.
 
+@inproceedings{SCARV:DAHK:20,
+  author        = {N. Dao and A. Attwood and B. Healy and D. Koch},
+  title         = {{FlexBex}: A {RISC-V} with a Reconfigurable Instruction Extension}, 
+  booktitle     = {International Conference on Field-Programmable Technology (ICFPT)}, 
+  pages         = {190--195},
+  year          = {2020},
+  url           = {https://doi.org/10.1109/ICFPT51103.2020.00034}
+}
+
+@article{SCARV:YADBM:22,
+  author        = {W. El Hadj Youssef and A. Abdelli and F. Dridi and R. Brahim and M. Machhout},
+  title         = {An Efficient Lightweight Cryptographic Instructions Set Extension for {IoT} Device Security},
+  journal       = {Security and Communication Networks},
+  volume        = {2022},
+  issue         = {9709601},
+  year          = {2022},
+  note          = {\url{https://doi.org/10.1155/2022/9709601}}
+}
+
+@inproceedings{SCARV:EKPYM:13,
+  author        = {S. Engels and E.B. Kavun and C. Paar and T. Yal\c{c}in and H. Mihajloska},
+  title         = {A Non-Linear/Linear Instruction Set Extension for Lightweight Ciphers},
+  booktitle     = {IEEE Symposium on Computer Arithmetic (ARITH)},
+  pages         = {67--75},
+  year          = {2013},
+  note          = {\url{https://doi.org/10.1109/ARITH.2013.36}}
+}
+
+@inproceedings{SCARV:EMOC:20,
+  author        = {G.H. Eisenkraemer and F.G. Moraes and L.L. de Oliveira and E. Carara},
+  title         = {Lightweight Cryptographic Instruction Set Extension on {Xtensa} Processor},
+  booktitle     = {IEEE International Symposium on Circuits and Systems (ISCAS)},
+  pages         = {1--5},
+  year          = {2020},
+  note          = {\url{https://doi.org/10.1109/ISCAS45731.2020.9180579}}
+}
+
 @inproceedings{SCARV:HKSS:12,
   author        = {Y. Hori and T. Katashita and A. Sasaki and A. Satoh},
   title         = {{SASEBO-GIII}: A hardware security evaluation board equipped with a 28-nm {FPGA}},
@@ -2767,17 +2848,6 @@
   pages         = {747--750},
   year          = {2019},
   note          = {\url{https://doi.org/10.1109/ICECS46596.2019.8965156}}
-}
-
-@inproceedings{SCARV:StePri:21,
-  author        = {S. Steinegger and R. Primas},
-  title         = {A Fast and Compact {RISC-V} Accelerator for {Ascon} and Friends},
-  booktitle     = {Smart Card Research and Advanced Applications (CARDIS)},
-  publisher     = {Springer-Verlag},
-  series        = {LNCS 12609},
-  pages         = {53--67},
-  year          = {2021},
-  note          = {\url{https://doi.org/10.1007/978-3-030-68487-7_4}}
 }
 
 @article{SCARV:SolAbo:10,
